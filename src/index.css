@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #111827;
+  --secondary-color: whitesmoke;
+  --other-color: rgba(75, 85, 99, 0.8);
+  --body-color: #4b5563;
+}
+
+body {
+  color: var(--body-color);
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.other-color {
+  color: var(--other-color);
+}
+
+.dark body {
+  background-color: var(--body-color) !important;
+  color: #e5e7eb !important;
+}
+
+.dark .text-primary {
+  color: white;
+}
+
+.dark .other-color {
+  color: rgba(245, 245, 245, 0.8);
+}
