@@ -21,7 +21,7 @@ export default function Products() {
         />
         <div class="mt-5 px-4 flex justify-between">
           <div class="flex flex-col w-full">
-            <span class="font-semibold dark:font-medium text-primary">
+            <span class="font-semibold dark:font-medium text-primary uppercase">
               {product.title}
             </span>
             <span class="text-bodyColor font-medium mt-2">
