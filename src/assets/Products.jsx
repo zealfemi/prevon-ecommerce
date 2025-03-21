@@ -11,11 +11,7 @@ export default function Products() {
       .then((data) => setProducts(data));
   }, []);
 
-  const clothes = products.filter(
-    (product) => product.category.id == 1 && product.title.length > 15
-  );
-
-  const listClothes = clothes.map((product) => {
+  const listProducts = products.map((product) => {
     return (
       <div key={product.id}>
         <img
@@ -46,7 +42,7 @@ export default function Products() {
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {listClothes}
+          {listProducts}
         </div>
       </section>
     </>
