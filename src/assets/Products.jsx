@@ -4,10 +4,11 @@ export default function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.escuelajs.co/api/v1/products")
+    fetch(
+      "https://api.escuelajs.co/api/v1/products/?categoryID=1&offset=0&limit=8"
+    )
       .then((result) => result.json())
-      .then((data) => setProducts(data))
-      .catch((error) => console.log(error));
+      .then((data) => setProducts(data));
   }, []);
 
   const clothes = products.filter(
